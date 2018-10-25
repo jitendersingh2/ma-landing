@@ -17,7 +17,7 @@
             debug: true,
             appUrlRoot: '/members/secure/account/erusurvey/',
             servicesTimeout: 120000,
-            pdfUrl: '/assets/members/secure/apps/malanding/images/U14314-2018-Medicare-Advantage-Onboarding-Guide-r001.pdf',
+            pdfUrl: '/assets/members/secure/apps/malanding/pdf/U14314-2018-Medicare-Advantage-Onboarding-Guide-r001.pdf',
             downloadPDFName: 'Start-up Guide',
             services: {
                 dataCapture: '/members/services/sec/touchpoints'
