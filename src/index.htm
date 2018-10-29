@@ -1,6 +1,6 @@
 #parse("members/secure/header-logic.htm")
 #if($loggedInMember && $cookies.LDAPUserID.value)
-#set($pageNav = "eru-survey")
+#set($pageNav = "ma-landing")
 
 <!doctype html>
 <html lang="en-US" class="no-js">
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="/assets/global/css/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/global/dist/css/fontcustom.css">
         <link rel="stylesheet" href="/assets/members/secure/apps/malanding/css/app.css">
+        <script src="/assets/global/js/libs/jquery/1.11.0/jquery-1.11.0.min.js"></script>
     </head>
 
     <body id="analytics-enabled"><!--<![endif]-->
@@ -43,7 +44,6 @@
         <!-- footer -->
         #parse("members/secure/footer-responsive-classic.htm")
 
-        <script src="/assets/global/js/libs/jquery/1.11.0/jquery-1.11.0.min.js"></script>
         <script src="/assets/global/js/libs/bootstrap/3.1.1/bootstrap.min.js"></script>
         <script src="/assets/global/js/libs/angular/1.5.6/angular.js"></script>
         <script src="/assets/global/js/libs/angular/1.5.6/angular-route.min.js"></script>

@@ -10,16 +10,14 @@
      */
 
     angular
-        .module('erusurvey.services.homeFactory', [
-            //'erusurvey.services.dataCaptureService'
+        .module('malanding.services.homeFactory', [
+            'malanding.services.startUpGuideService'
         ])
         .factory('homeFactory', [
             '$http',
             '$q',
-            '$filter',
-            //'dataCaptureService',
-            'config',
-            function($http, $q, $filter, config) {
+            'startUpGuideService',
+            function($http, $q, startUpGuideService) {
 
                 var response;
 
@@ -27,19 +25,9 @@
 
                 return {
 
-                    /**
-                     * @ngdoc method
-                     * @name set
-                     * @methodOf bcbsnc.member.billingPayment.services.trackFactory. : trackFactory
-                     * @description Set analytics and debugging data.
-                     * @param {String} name The key to set an error against.
-                     * @param {*} data Data to store/set.
-                     * @param {Boolean} adobe adobe
-                     * @param {Boolean} touchpoint touchpoint
-                     */
-                    set: function(name, data) {
+                    downloadStartUpGuide: function() {
 
-                        dataCaptureService.track(name, data);
+                        startUpGuideService.download();
                     }
                 };
             }]);

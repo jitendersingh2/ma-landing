@@ -45,7 +45,8 @@
             '/assets/home': './node_modules/bcbsnc-global-assets/dist/home',
             '/assets/global/images/bc-subhead-bg.png':'../../images/bc-subhead-bg.png',
 
-            '/assets/members/secure/apps/malanding/images/': './src/images'
+            '/assets/members/secure/apps/malanding/images/': './src/images',
+            '/assets/members/secure/apps/malanding/pdf/': './src/pdf'
         },
 
         genericMatch:   ['./src/**/*.md'],
