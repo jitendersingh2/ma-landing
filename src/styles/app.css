@@ -51,6 +51,10 @@
     margin-top: 20px;
 }
 
+.video-embed {
+    margin-bottom: -5px;
+}
+
 #ma-landing-page-container button {
     border-width: 0px;
     width: 200px;
