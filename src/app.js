@@ -6,13 +6,15 @@
      * Initialize entire application.
      *
      * @namespace Applications
-     * @class erusurvey
+     * @class malanding
      */
     angular
         .module('malanding', [
 
             'ngRoute',
             'malanding.config',
+            'malanding.services.startUpGuideService',
+            'malanding.services.homeFactory',
             'malanding.controllers.homeCtrl'
 
         ])

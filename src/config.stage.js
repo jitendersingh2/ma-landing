@@ -15,16 +15,14 @@
             namespace: 'malanding',
             analytics: false,
             debug: true,
-            appUrlRoot: '/members/secure/account/erusurvey/',
+            appUrlRoot: '/members/secure/account/malanding/',
             servicesTimeout: 120000,
-            pdfUrl: '/assets/members/secure/apps/malanding/pdf/U14314-2018-Medicare-Advantage-Onboarding-Guide-r001.pdf',
             downloadPDFName: 'Start-up Guide',
             services: {
-                dataCapture: '/members/services/sec/touchpoints'
+                startUpGuide: '/assets/members/secure/apps/malanding/pdf/U14314-2018-Medicare-Advantage-Onboarding-Guide-r001.pdf'
             },
             partials: {
-                viewHome: '/assets/members/secure/apps/erusurvey/components/home/view.home.htm',
-                partsDir: '/assets/members/secure/apps/erusurvey/components/home/partials/'
+                viewHome: '/assets/members/secure/apps/malanding/components/home/view.home.htm'
             }
         });
 
