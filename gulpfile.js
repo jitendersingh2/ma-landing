@@ -60,6 +60,7 @@
         jsHintMatch:    ['./src/**/*.js', 'src/**/*.qa.js', 'src/**/*.ps.js',                        'src/**/*.dev.js', '!src/**/*_spec.js', '!src/bower_components/**/*.js', '!src/js/**/*.js'],
 
         imgMatch:       ['./src/images/**/*'],
+        pdfMatch:       ['./src/pdf/**/*'],
         cssMatch:       ['./src/styles/**/*.css', './src/styles/.cache/**/*.css'],
         htmlMatch:      ['./src/**/*.html','./src/**/*.htm', '!src/**/*.dev.html', '!src/**/*.dev.htm'],
         indexMatch:     ['./src/index.htm', './src/index.html'],
@@ -114,6 +115,9 @@
             .pipe(gulp.dest(settings.distStyles));
 
         gulp.src(settings.imgMatch, { base: settings.servePath })
+            .pipe(gulp.dest(settings.dist));
+
+        gulp.src(settings.pdfMatch, { base: settings.servePath })
             .pipe(gulp.dest(settings.dist));
     });
 
